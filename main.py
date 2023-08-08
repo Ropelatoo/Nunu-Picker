@@ -100,3 +100,5 @@ mensagem_label = tk.Label(root, text="Criado com carinho para todos(a) os(a) mai
 mensagem_label.pack(side="bottom", pady=10)
 
 root.mainloop()
+
+#Final

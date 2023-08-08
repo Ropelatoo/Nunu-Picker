@@ -40,10 +40,10 @@ papeis = ["AP", "Tank"]
 root = tk.Tk()
 root.title("Escolha de Skin e Build")
 
-# Define o tamanho da janela para 400x400
+# Janela 800x500
 root.geometry("800x500")
 
-# Centraliza a janela no monitor
+# Deixa no meio da tela
 largura_janela = 800
 altura_janela = 500
 largura_tela = root.winfo_screenwidth()
@@ -52,20 +52,20 @@ x_pos = (largura_tela - largura_janela) // 2
 y_pos = (altura_tela - altura_janela) // 2
 root.geometry(f"{largura_janela}x{altura_janela}+{x_pos}+{y_pos}")
 
-# Inicializa a variável resultado_var
+# Starta Var
 resultado_var = tk.StringVar()
 
-# Rola a opção aleatoriamente
+# Rola dnv
 rolar_novamente()
 
-# Define a fonte para o rótulo de resultado
+# Fonte
 fonte_resultado = ("Helvetica", 14)
 
-# Cria o rótulo para exibir o resultado
+# Rotulo resultado
 resultado_label = tk.Label(root, textvariable=resultado_var, justify="center", font=fonte_resultado)
 resultado_label.pack(pady=10)
 
-# Define a fonte para os botões
+# Fonte botão
 fonte_botoes = ("Helvetica", 12)
 
 # Cria o botão "Rolar Novamente"
@@ -76,29 +76,29 @@ rolar_button.pack()
 sair_button = tk.Button(root, text="Sair", command=sair, font=fonte_botoes, height=2)
 sair_button.pack()
 
-# Adiciona um espaço para a mensagem "Discord"
+# Mensagem Discord
 espaco_discord_label = tk.Label(root, text="", font=("Helvetica", 10))
 espaco_discord_label.pack()
 
-# Define a fonte para o bottom
+# Fonte
 fonte_bottom = ("Helvetica", 10, "italic")
 
-# Adiciona uma mensagem "Discord" na parte inferior
-discord_label = tk.Label(root, text="Discord: rropelato", justify="center", font=(fonte_bottom))
+# Msg Discord
+discord_label = tk.Label(root, text="Discord: ropelatoo", justify="center", font=(fonte_bottom))
 discord_label.pack(side="bottom", pady=10)
 
-# Adiciona uma mensagem "Github" na parte inferior
+# Msg Github
 github_label = tk.Label(root, text="Github: Ropelatoo", justify="center", font=(fonte_bottom))
 github_label.pack(side="bottom", pady=10)
 
-# Adiciona uma mensagem "Criado por Ropelato" na parte inferior
+# Msg Ropelato
 criado_por_label = tk.Label(root, text="Criado por Ropelato", justify="center", font=(fonte_bottom))
 criado_por_label.pack(side="bottom", pady=10)
 
-# Adiciona uma mensagem "Mensagem" na parte inferior
+# Mensagem
 mensagem_label = tk.Label(root, text="Criado com carinho para todos(a) os(a) mains Nunu", justify="center", font=(fonte_bottom))
 mensagem_label.pack(side="bottom", pady=10)
 
 root.mainloop()
 
-#Final
+# Final
